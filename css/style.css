@@ -1,0 +1,92 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #2b2b2b;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    text-align: center;
+    overflow-x: hidden;
+}
+
+header {
+    background-color: #333;
+    padding: 10px;
+    text-align: center;
+}
+
+.header .logo,
+.header .logo2 {
+    height: 70px;
+    margin: 0 10px;
+}
+
+.container {
+    margin: 20px auto;
+    max-width: 100%;
+    padding: 20px;
+    margin: 50px 50px;
+    background: #2b2b2b;
+    border-radius: 8px;
+    box-shadow: 2px 1px 3px 1px #feb20062;
+    color: white;
+}
+
+table {
+    margin-bottom: 50px;
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table,
+th,
+td {
+    border: 1px solid #ddd;
+ 
+}
+
+th,
+td {
+    padding: 10px;
+    text-align: center;
+    white-space: nowrap;  /* Evita a quebra de linha */
+}
+
+th {
+    background-color: #feb100;
+    color: #ffffff;
+}
+
+button {
+    padding: 10px 15px;
+    margin: 10px;
+    color: #ffffff;
+    background-color: #feb100;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #feb100;
+}
+
+select,
+input {
+    padding: 8px;
+    margin: 10px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+}
+
+.footer {
+    text-align: center;
+    padding: 10px;
+    background: #333;
+    color: #ffcc00;
+    position: fixed;  /* Mudança de 'absolute' para 'fixed' */
+    bottom: 0;
+    width: 100%;
+    left: 0;  /* Garante que o footer ocupe toda a largura */
+    z-index: 1000;  /* Garante que o footer fique sobre outros elementos */
+}

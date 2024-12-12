@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Controle de Ativos</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="shortcut icon" href="/imgs/logo3-removebg-preview.png" type="image/x-icon">
+</head>
+<body>
+    <header class="header">
+        <img src="/imgs/logo-removebg-preview.png" alt="Logo Tucano" class="logo">
+        <img src="/imgs/logo2-removebg-preview.png" alt="Logo YH Brasil" class="logo2">
+      </header>
+    <div class="container">
+        <h2>ESTOQUE</h2>
+        <table id="inventoryTable">
+            <thead>
+                <tr>
+                    <th>Item</th>
+                    <th>Quantidade</th>
+                    <th>Último Técnico</th>
+                    <th>Data/Hora da Última Retirada</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Os itens serão adicionados dinamicamente aqui -->
+            </tbody>
+        </table>
+
+        <h2>Adicionar Item</h2>
+        <input type="text" id="itemName" placeholder="Nome do item">
+        <input type="number" id="itemQuantity" placeholder="Quantidade" min="1">
+        <button onclick="addItem()">Adicionar</button>
+
+        <h2>Retirar Item</h2>
+        <select id="technicians">
+            <option value="">Selecione o Técnico</option>
+            <option value="Victor Straioto">Victor Straioto</option>
+            <option value="Gabriel Gomes">Gabriel Gomes</option>
+            <option value="Gessivan Jr">Gessivan Jr</option>
+            <option value="Lucas Silva">Lucas Silva</option>
+            <option value="Lucas Sousa">Lucas Sousa</option>
+            <option value="Ygor Roberto">Ygor Roberto</option>
+            <option value="Bruno Silva">Bruno Silva</option>
+            <option value="Victor Azevedo">Victor Azevedo</option>
+            <option value="Marcelo Junior">Marcelo Junior</option>
+        </select>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2024 YH Brasil - Controle de Ativos</p>
+      </footer>
+
+    <script src="/js/app.js"></script>
+</body>
+</html>
